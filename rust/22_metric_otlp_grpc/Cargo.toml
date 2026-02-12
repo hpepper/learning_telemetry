@@ -1,0 +1,11 @@
+[package]
+name = "metric_otlp_grpc"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+opentelemetry = "0.31.0"
+opentelemetry-otlp = { version = "0.31.0", features = ["grpc-tonic", "metrics"] }
+opentelemetry_sdk = "0.31.0"
+rand = "0.10.0"
+tokio = { version = "1.49.0", features = ["macros", "rt-multi-thread"] }
